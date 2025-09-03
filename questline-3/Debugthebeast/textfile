@@ -1,0 +1,19 @@
+Errors we found
+
+Hardcoded Initial Values:
+Using -9999999 for largest and second is unsafe.
+If all numbers in the list are smaller than -9999999, it fails.
+
+Duplicates Not Handled Properly:
+The function considers a duplicate of the largest number as the second largest.
+Example: [5, 5, 5] incorrectly returns 5 as the second largest.
+
+Missing Edge Case Check:
+If the list has fewer than two unique numbers, the function should not return a result.
+
+probelems fixed
+
+	problems                                                       fix
+Unsafe initial values	                                          Replaced -9999999 with float('-inf')
+Duplicate largest values treated as second largest	            Added check: num != largest
+Didn't check for minimum number of valid values               	Added len(arr) < 2 and final check for second
