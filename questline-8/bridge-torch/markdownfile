@@ -1,0 +1,22 @@
+Bridge and Torch Optimization – Solution
+
+Crossing Times:
+- Person A: 1 min
+- Person B: 2 min
+- Person C: 7 min
+- Person D: 10 min
+
+Sequence:
+
+1. A and B cross together (2 min)
+2. A returns with the torch (1 min)
+3. C and D cross together (10 min)
+4. B returns with the torch (2 min)
+5. A and B cross again (2 min)
+
+Total Time = 2 + 1 + 10 + 2 + 2 = 17 minutes
+
+Reasoning:
+- Sending the two fastest (A and B) first allows them to return the torch quickly.
+- The two slowest (C and D) cross together only once.
+- This minimizes the back-and-forth and optimizes for the higher crossing times.
