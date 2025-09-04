@@ -1,0 +1,22 @@
+EVEN NUMBERS STARTING FROM '4' ARE ADDED TO PRECEDING NUMBERS
+
+first number in the sequence is 2
+where 2+4=6; which is the second number in the sequence
+
+second number = 6
+where next even number ie; 6
+where 6+6=12;which is the third number in the sequence
+
+third number = 12
+where next even number ie; 8
+where 12+8=20;which is the fourth number in the sequence
+
+fourth number = 20
+where next even number ie; 10
+where 20+10=30;which is the fifth number in the sequence
+
+fifth number = 30
+where next even number ie; 12
+where 30+12 = 42;which is the sixth number in the sequence
+
+so next two numbers in the sequence will be 30 and 42
