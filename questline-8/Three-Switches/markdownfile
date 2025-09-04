@@ -1,0 +1,10 @@
+Three Switches, One Bulb – Solution Strategy
+
+Steps:
+1. Turn on Switch 1 and leave it on for 5 minutes.
+2. After 5 minutes, turn off Switch 1 and turn on Switch 2.
+3. Leave Switch 3 OFF at all times.
+4. Enter the room and inspect the bulb:
+   - If the bulb is ON → Switch 2 controls it.
+   - If the bulb is OFF but warm → Switch 1 controls it.
+   - If the bulb is OFF and cold → Switch 3 controls it.
