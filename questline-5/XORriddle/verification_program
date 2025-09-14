@@ -1,0 +1,15 @@
+verfication program
+
+# Given: N XOR 23 = 45
+# We need to find N
+
+N = 45 ^ 23   # XOR operation
+print("Secret number N =", N)
+
+# Verification
+print("Check: N XOR 23 =", N ^ 23)
+
+output
+Secret number N = 58
+Check: N XOR 23 = 45
+
