@@ -1,6 +1,4 @@
-# Binary Palindrome Checker
 
-# ask user for two numbers
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
@@ -11,8 +9,6 @@ def is_palindrome(n):
         print(n, "in binary", binary, "is a PALINDROME")
     else:
         print(n, "in binary", binary, "is NOT a palindrome")
-
-# check both numbers
 is_palindrome(num1)
 is_palindrome(num2)
 
