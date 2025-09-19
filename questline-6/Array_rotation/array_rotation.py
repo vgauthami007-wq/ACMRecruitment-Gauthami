@@ -1,20 +1,20 @@
-def rotate(nums, k):
-    n = len(nums)
-    k = k % n  # normalize k
-    
-    def reverse(start, end):
-        while start < end:
-            nums[start], nums[end] = nums[end], nums[start]
-            start += 1
-            end -= 1
-    
-    reverse(0, n - 1)
-    reverse(0, k - 1)
-    reverse(k, n - 1)
+l = [1,2,3,4,5,6,7,8,9]
+n = len(l)
 
-if __name__ == "__main__":
-    nums = [1, 2, 3, 4, 5, 6, 7]
-    k = 3
-    print("Original:", nums)
-    rotate(nums, k)
-    print("Rotated:", nums)
+def arrayrotation(k):
+    L = [0] * n   
+    for i in range(n):
+        new= (i + k) % n   
+        L[new] = l[i]
+    return L
+
+
+#1
+k = 2
+print("original array =", l)
+print("array when rotated by", k, "=", arrayrotation(k))
+
+#2
+k = 4
+print("original array =", l)
+print("array when rotated by", k, "=", arrayrotation(k))
