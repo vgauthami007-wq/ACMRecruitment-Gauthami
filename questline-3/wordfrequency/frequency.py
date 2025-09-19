@@ -1,27 +1,14 @@
-from collections import Counter
-import re
+text = input("Enter a paragraph: ").lower().split()
+words = []
+counts = []
 
-def word_frequency(text: str):
-    """
-    Count frequency of each unique word in the given text.
-    Returns a dictionary sorted by frequency (highest -> lowest).
-    """
-    # Normalize text: lowercase, remove punctuation
-    words = re.findall(r"\b\w+\b", text.lower())
-    counter = Counter(words)
-    return dict(sorted(counter.items(), key=lambda x: x[1], reverse=True))
+for w in text:
+    if w in words:
+        idx = words.index(w)
+        counts[idx] += 1
+    else:
+        words.append(w)
+        counts.append(1)
 
-if __name__ == "__main__":
-    # Read input from file
-    with open("input.txt", "r") as f:
-        text = f.read()
-
-    # Process frequency
-    frequencies = word_frequency(text)
-
-    # Write results to file
-    with open("output.txt", "w") as f:
-        for word, count in frequencies.items():
-            f.write(f"{word} -> {count}\n")
-
-    print("Word frequencies written to output.txt")
+for i in range(len(words)):
+    print(f"{words[i]} → {counts[i]}")
